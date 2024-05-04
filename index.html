@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<link href="css/bootstrap.css"  type="text/css">
+<link href="css/bootstrap.min.css" type="text/css"/>
+<title>Welcome!</title>
+<style type="text/css">
+<!--
+.style11 {font-family: "Times New Roman", Times, serif; font-size: medium; font-weight: bold; font-style: italic; color: #DF4800; }
+.style13 {
+	color: #047B0B;
+	font-size: large;
+}
+.style19 {font-family: "Times New Roman", Times, serif; font-size: x-large; font-weight: bold; font-style: italic; color: #DF4800; }
+-->
+</style>
+</head>
+<body>
+<div align="center">
+  <p>&nbsp;</p>
+  <p><a href="home.php"><img src="images/PS_01_Logo_F.jpg"></a>
+    </p>
+</div><br><br><hr><br><table width="524" height="299" align="center" background="images/page-peel-psd.jpg">
+<tr><td width="271">
+<form name="form1" method="post" action="login.php" onSubmit="">
+
+
+<br>
+
+  <table width="517" height="210" id="title" align="center">
+    <tr>
+      <td width="206"><div align="right"><span class="style19">Username:</span></div></td>
+          <td width="299"><input type="text" id="username" name="username" height="30" width="180"/></td>
+      </tr>
+    <tr>
+      <td><div align="right"><span class="style19">Password:</span></div></td>
+        <td><input type="password" id="password" name="password" height="30" width="180" /></td>
+      </tr>
+    <tr>
+      <td height="45">&nbsp;</td>
+        <td><input type="submit" name="submit" onClick=" return Validate()" value="Log In" style="background-color:#CCCCCC; width:60px;height:30px" /></td>
+      </tr>
+  </table>
+
+
+</form>
+<p align="center" class="style11"><span class="style13">New here? <a href="signup.php">Register!</a></span></p>
+</td></tr></table>
+<br><hr>
+</body>
+</html>
+
+<script>
+function Validate()
+{ 
+var uname = document.getElementById("username").value;
+	var pwd = document.getElementById("password").value;
+    if (uname == ""||uname==null) {
+        alert("Enter User Name");
+        return false;
+    }
+	if (pwd == ""||pwd==null) {
+        alert("Please Enter Password ");
+        return false;
+    }
+}
+</script>
